@@ -1,5 +1,11 @@
 ZADANIE 1
 
+USE pracownia;
+
+DROP TABLE IF EXISTS ekwipunek;
+DROP TABLE IF EXISTS zasob;
+DROP TABLE IF EXISTS kreatura;
+
 CREATE TABLE pracownia.kreatura AS SELECT * FROM wikingowie.kreatura;
 CREATE TABLE pracownia.zasob AS SELECT * FROM wikingowie.zasob;
 CREATE TABLE pracownia.ekwipunek AS SELECT * FROM wikingowie.ekwipunek;

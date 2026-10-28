@@ -1,6 +1,18 @@
 ZADANIE 1
 
-INSERT INTO pracownia.kreatura SELECT * FROM wikingowie.kreatura;
+USE pracownia;
+
+DROP TABLE IF EXISTS etapy_wyprawy;
+DROP TABLE IF EXISTS uczestnicy;
+DROP TABLE IF EXISTS wyprawa;
+DROP TABLE IF EXISTS sektor;
+DROP TABLE IF EXISTS ekwipunek;
+DROP TABLE IF EXISTS zasob;
+DROP TABLE IF EXISTS kreatura;
+
+CREATE TABLE pracownia.kreatura AS SELECT * FROM wikingowie.kreatura;
+CREATE TABLE pracownia.zasob AS SELECT * FROM wikingowie.zasob;
+CREATE TABLE pracownia.ekwipunek AS SELECT * FROM wikingowie.ekwipunek;
 CREATE TABLE pracownia.uczestnicy AS SELECT * FROM wikingowie.uczestnicy;
 CREATE TABLE pracownia.etapy_wyprawy AS SELECT * FROM wikingowie.etapy_wyprawy;
 CREATE TABLE pracownia.sektor AS SELECT * FROM wikingowie.sektor;

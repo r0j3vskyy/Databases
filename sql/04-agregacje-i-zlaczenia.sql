@@ -1,5 +1,7 @@
 ZADANIE 1
 
+USE pracownia;
+
 SELECT AVG(waga) as srednia_waga FROM kreatura WHERE rodzaj='wiking';
 SELECT AVG(waga) as srednia_waga, rodzaj FROM kreatura GROUP BY rodzaj;
 SELECT AVG((2024-(YEAR(dataUr)))) as sredni_wiek, rodzaj FROM kreatura GROUP BY rodzaj;
